@@ -16,7 +16,12 @@ const countDown = (bd) => {
         hours,
         minutes,
         seconds,
-    }
+    };
 };
 
-countDown(babyBirthDay);
+const update = (cb, dt) => {
+    let temp = cb (dt);
+    console.log (temp);
+};
+
+update (countDown, babyBirthDay);
