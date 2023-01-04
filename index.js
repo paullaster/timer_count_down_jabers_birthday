@@ -9,7 +9,7 @@ const countDown = (bd) => {
     const birthday = Date.parse (bd) - Date.now ();
     const days = Math.floor (birthday / (24 * 60 * 60 * 1000));
     const hours = Math.floor ((birthday / (60 * 60 * 1000)) % 24);
-    const minutes = Math.floor ((birthday / 1000 / 60) %  60 );
+    const minutes = Math.floor ((birthday / (1000 * 60)) %  60 );
     const seconds = Math.floor ((birthday / 1000 ) % 60 );
     return {
         days,
